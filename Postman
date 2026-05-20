@@ -1,0 +1,13 @@
+1/ Authentification API
+
+curl --location --request POST \
+ --url https://api.trackingmore.com/v4/trackings/create \
+ --header 'Accept: application/json' \
+ --header 'Content-Type: application/json' \
+ --header 'Tracking-Api-Key: 1b359c502d123855ge1fb53414ae642a' \
+ --data '{
+       "note": "Test order",
+        "language": "en",
+        "courier_code": "usps",
+        "order_number": "1234",
+}'
